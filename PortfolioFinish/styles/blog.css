@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    color: #605c5c;
+    font-size: 30px;
+
+}
+
+
+/*les cartes projet */
+
+.containerstage {
+    display: flex;
+    justify-content: center;
+}
+
+/*taille de la carte */
+.stage {
+
+    background-color: rgb(255, 255, 255);
+
+    height: 500px;
+    width: 800px;
+    margin-top: 100px;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin-bottom: 150px;
+    position: relative;
+    display: inline-block;
+
+
+}
+
+/*image de la carte */
+.stage img {
+    height: 500px;
+    width: 800px;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+/*effet de flou avec le hover */
+.stage:hover img {
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+    filter: blur(10px);
+
+}
+
+
+.containerprojet {
+    display: flex;
+    justify-content: center;
+}
+
+/*taille de la carte */
+.card{
+    
+    background-color: rgb(255, 255, 255);    
+    margin:0 30px;
+    height:500px;
+    width:400px;
+    margin-top: 50px;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin-bottom: 150px;
+    position: relative;
+    display: inline-block;
+    
+}
+/*image de la carte */
+.card img {
+    height: 500px;
+    width: 400px;
+    border-radius: 2rem ;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+/*effet de flou avec le hover */
+.card:hover img {
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+    filter: blur(10px); 
+
+}
+/*description de la carte */
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(35, 34, 34, 0.5);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.description1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(35, 34, 34, 0.5);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.card:hover .description, .card:hover .description1 {
+    opacity: 0.8;
+    transition: opacity 0.8s;
+}
+.stage:hover .description, .stage:hover .description1 {
+    opacity: 0.8;
+    transition: opacity 0.8s;
+}
